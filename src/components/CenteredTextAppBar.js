@@ -44,24 +44,6 @@ export default function CenteredTextAppBar() {
                             SIGN IN
                         </Button>
                     </div>
-
-                    {/* <IconButton edge="start" color="inherit">
-            <MenuIcon />
-          </IconButton>
-          <Box display='flex' flexGrow={1} />
-          <Typography
-            variant="h6"
-            style={{ fontFamily: "PACIFICO" }}
-            className={classes.title}
-          >
-            React Shop
-          </Typography>
-          <Box display='flex' flexGrow={1} />
-          <Button
-            color="inherit"
-            style={{ fontWeight: "bold" }}>
-            SIGN IN
-          </Button> */}
                 </Toolbar>
             </AppBar>
         </div>

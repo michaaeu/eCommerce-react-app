@@ -84,16 +84,14 @@ export default function SignInPage() {
             Sign In
           </Button>
           <Grid container>
-            <Grid item xs>
-              <Link href="#" variant="body2">
-                Forgot password?
-              </Link>
-            </Grid>
-            <Grid item>
-              <Link href="#" variant="body2">
-                {"Don't have an account? Sign Up"}
-              </Link>
-            </Grid>
+            <Link href="#" variant="body2">
+              Forgot password?
+            </Link>
+            <Box display='flex' flexGrow={1} />
+            <Link href="#" variant="body2">
+              {"Don't have an account? Sign Up"}
+            </Link>
+
           </Grid>
         </form>
       </div>
