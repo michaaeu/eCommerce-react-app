@@ -1,5 +1,4 @@
 import React from 'react'
-import Box from '@material-ui/core/Box';
 import Toolbar from '@material-ui/core/Toolbar';
 import MenuIcon from '@material-ui/icons/Menu';
 import { Button, IconButton, Typography, AppBar } from '@material-ui/core';
