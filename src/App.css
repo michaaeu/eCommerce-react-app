@@ -14,7 +14,6 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +34,20 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* PACIFICO */
+@font-face {
+  font-family: 'PACIFICO';
+  src:
+  url('./fonts/Pacifico/Pacifico-Regular.ttf') format('truetype');
+  /*
+   For other font file formats:
+  src:
+  url('../fonts/WOF2-Font.woff2') format('woff2'),
+  url('../fonts/WOF-Font.woff') format('woff'),
+  url('../fonts/TTF-Font.ttf') format('truetype');
+  */
+  font-weight: normal;
+  font-style: normal;
 }
