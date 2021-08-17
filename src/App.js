@@ -1,13 +1,12 @@
 import './App.css';
 import { MuiThemeProvider, createTheme } from '@material-ui/core/styles';
-// eslint-disable-next-line
 import SignInPage from './pages/SignInPage';
-// eslint-disable-next-line
 import SignUpPage from './pages/SignUpPage';
 import HomePage from './pages/HomePage';
-import CenteredTextAppBar from './components/CenteredTextAppBar';
+import NavigationBar from './components/NavigationBar';
 
 import './fonts/Pacifico/Pacifico-Regular.ttf';
+import './App.css';
 
 import {
   BrowserRouter as Router,
@@ -15,10 +14,11 @@ import {
   Route,
 } from "react-router-dom";
 
+// E4717A
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#E4717A'
+      main: '#A27250'
     }
   }
 });
@@ -28,11 +28,11 @@ function App() {
     <MuiThemeProvider theme={theme}>
       <div className="App">
         <Router>
-          <CenteredTextAppBar />
+          <NavigationBar />
           <Switch>
             <Route path='/' exact component={HomePage} />
-            <Route path='/signin' exact component={SignInPage}/>
-            <Route path='/signup' exact component={SignUpPage}/>
+            <Route path='/signin' exact component={SignInPage} />
+            <Route path='/signup' exact component={SignUpPage} />
           </Switch>
         </Router>
         {/* <HomePage /> */}

@@ -45,7 +45,7 @@ export default function SignInPage() {
           <LockOutlinedIcon />
         </Avatar>
         <Typography component="h1" variant="h5">
-          Sign in
+          Zaloguj się
         </Typography>
         <form className={classes.form} noValidate>
           <TextField
@@ -54,7 +54,7 @@ export default function SignInPage() {
             required
             fullWidth
             id="email"
-            label="Email Address"
+            label="Adres Email"
             name="email"
             autoComplete="email"
             autoFocus
@@ -65,14 +65,14 @@ export default function SignInPage() {
             required
             fullWidth
             name="password"
-            label="Password"
+            label="Hasło"
             type="password"
             id="password"
             autoComplete="current-password"
           />
           <FormControlLabel
             control={<Checkbox value="remember" color="primary" />}
-            label="Remember me"
+            label="Zapamiętaj mnie"
           />
           <Button
             type="submit"
@@ -80,18 +80,18 @@ export default function SignInPage() {
             variant="contained"
             color="primary"
             className={classes.submit}
+            href='/'
           >
-            Sign In
+            Zaloguj
           </Button>
           <Grid container>
             <Link href="#" variant="body2">
-              Forgot password?
+              Zapomniałeś/aś hasła?
             </Link>
             <Box display='flex' flexGrow={1} />
-            <Link href="#" variant="body2">
-              {"Don't have an account? Sign Up"}
+            <Link href="signup" variant="body2">
+              {"Nie masz konta? Załóż nowe!"}
             </Link>
-
           </Grid>
         </form>
       </div>

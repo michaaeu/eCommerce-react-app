@@ -1,6 +1,6 @@
 import React from 'react'
 import Toolbar from '@material-ui/core/Toolbar';
-import MenuIcon from '@material-ui/icons/Menu';
+import Home from '@material-ui/icons/Home';
 import { Button, IconButton, Typography, AppBar } from '@material-ui/core';
 
 import { makeStyles } from '@material-ui/core/styles';
@@ -10,37 +10,40 @@ const useStyles = makeStyles(theme => ({
         flexGrow: 1,
         textAlign: 'center',
     },
-    left: { float: 'left', width: '80px'},
+    left: { float: 'left', width: '70px' },
     center: { margin: '0 auto' },
-    right: { float: 'right' ,width: '80px'}
+    right: { float: 'right', width: '70px' }
 }));
 
-export default function CenteredTextAppBar() {
+export default function NavigationBar() {
     const classes = useStyles();
 
     return (
         <div>
-            <AppBar position="static">
+            <AppBar position="fixed">
                 <Toolbar variant="dense">
                     <div className={classes.left}>
-                        <IconButton edge="start" color="inherit">
-                            <MenuIcon />
+                        <IconButton
+                            edge="start"
+                            color="inherit"
+                            href='/'>
+                            <Home />
                         </IconButton>
                     </div>
                     <div className={classes.center}>
                         <Typography
                             variant="h6"
                             style={{ fontFamily: "PACIFICO" }}
-                            className={classes.title}
-                        >
+                            className={classes.title}>
                             React Shop
                         </Typography>
                     </div>
                     <div className={classes.right}>
                         <Button
+                            href='/signin'
                             color="inherit"
                             style={{ fontWeight: "bold" }}>
-                            SIGN IN
+                            Zaloguj
                         </Button>
                     </div>
                 </Toolbar>
