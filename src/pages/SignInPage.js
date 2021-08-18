@@ -13,6 +13,7 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Copyright from '../components/Copyright';
+import GitHubComponent from '../components/GithubComponent';
 
 const useStyles = makeStyles((theme) => ({
   paper: {
@@ -44,7 +45,7 @@ export default function SignInPage() {
         <Avatar className={classes.avatar}>
           <LockOutlinedIcon />
         </Avatar>
-        <Typography component="h1" variant="h5">
+        <Typography component="h1" variant="h5" color="textSecondary">
           Zaloguj się
         </Typography>
         <form className={classes.form} noValidate>
@@ -72,7 +73,11 @@ export default function SignInPage() {
           />
           <FormControlLabel
             control={<Checkbox value="remember" color="primary" />}
-            label="Zapamiętaj mnie"
+            label={
+              <Typography color="textSecondary">
+                Zapamiętaj mnie
+              </Typography>
+            }
           />
           <Button
             type="submit"
@@ -95,7 +100,8 @@ export default function SignInPage() {
           </Grid>
         </form>
       </div>
-      <Box mt={8}>
+      <Box mt={3}>
+        <GitHubComponent />
         <Copyright />
       </Box>
     </Container>

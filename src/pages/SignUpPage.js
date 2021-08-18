@@ -13,6 +13,7 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Copyright from '../components/Copyright';
+import GitHubComponent from '../components/GithubComponent';
 
 const useStyles = makeStyles((theme) => ({
   paper: {
@@ -44,7 +45,7 @@ export default function SignUpPage() {
         <Avatar className={classes.avatar}>
           <LockOutlinedIcon />
         </Avatar>
-        <Typography component="h1" variant="h5">
+        <Typography component="h1" variant="h5" color="textSecondary">
           Zarejestruj się
         </Typography>
         <form className={classes.form} noValidate>
@@ -98,7 +99,11 @@ export default function SignUpPage() {
             <Grid item xs={12}>
               <FormControlLabel
                 control={<Checkbox value="allowExtraEmails" color="primary" />}
-                label="Chcę otrzymywać inspiracje, promocje marketingowe i aktualizacje poprzez email."
+                label={
+                  <Typography color="textSecondary">
+                    Chcę otrzymywać inspiracje, promocje marketingowe i aktualizacje poprzez email.
+                  </Typography>
+                }
               />
             </Grid>
           </Grid>
@@ -121,7 +126,8 @@ export default function SignUpPage() {
           </Grid>
         </form>
       </div>
-      <Box mt={5}>
+      <Box mt={3}>
+        <GitHubComponent />
         <Copyright />
       </Box>
     </Container>

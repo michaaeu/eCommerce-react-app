@@ -35,7 +35,7 @@ export default function NavigationBar() {
                             variant="h6"
                             style={{ fontFamily: "PACIFICO" }}
                             className={classes.title}>
-                            React Shop
+                            Clothy Shop
                         </Typography>
                     </div>
                     <div className={classes.right}>
